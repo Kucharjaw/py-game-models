@@ -36,9 +36,9 @@ def main() -> None:
                     "email": player_info["email"],
                     "bio": player_info["bio"],
                     "race": race,
-                    "guild": guild,
-                    }
-                )
+                    "guild": guild, }
+            )
+
 
 if __name__ == "__main__":
     main()
