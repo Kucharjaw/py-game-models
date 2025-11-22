@@ -11,6 +11,9 @@ class Skill(models.Model):
     bonus = models.CharField(max_length=255)
     race = models.ForeignKey(Race, on_delete=models.CASCADE)
 
+    class Meta:
+        unique_together = ("name", "race")
+
 
 class Guild(models.Model):
     name = models.CharField(max_length=255, unique=True)
